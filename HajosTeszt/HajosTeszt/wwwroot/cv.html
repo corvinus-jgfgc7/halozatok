@@ -1,37 +1,40 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <HTML lang="hu">
 <head>
-<meta charset="utf-8">
-<title>Vándor Péter CV</title>
+    <meta charset="utf-8">
+    <title>Vándor Péter CV</title>
+    <link href="cv.css" rel="stylesheet">
 </head>
 <body>
 
 <h1>CV</h1>
 
-<ol>
-<li><a href="#a">Bemutatkozás</a></li>
-<li><a href="#b">Fénykép</a></li>
-<li><a href="#c">Tanulmányok</a></li>
-<li><a href="#d">Nyelvek</a></li>
-<li><a href="#e">Informatikai érdeklődés</a></li>
-<li><a href="#f">Egyéb érdeklődési területek</a></li>
-<li><a href="#g">Kedvenc (vad)állatok</a></li>
-<li><a href="#h">Kedvenc könyvek és könyvsorozatok</a></li>
+<ol id="menu">
+<li><a href="#a" class="menupont">Bemutatkozás</a></li>
+<li><a href="#b" class="menupont">Fénykép</a></li>
+<li><a href="#c" class="menupont">Tanulmányok</a></li>
+<li><a href="#d" class="menupont">Nyelvek</a></li>
+<li><a href="#e" class="menupont">Informatikai érdeklődés</a></li>
+<li><a href="#f" class="menupont">Egyéb érdeklődési területek</a></li>
+<li><a href="#g" class="menupont">Kedvenc (vad)állatok</a></li>
+<li><a href="#h" class="menupont">Kedvenc könyvek és könyvsorozatok</a></li>
 </ol>
 
 <h2><a id="a">Bemutatkozás</a></h2>
 
-<p>Vándor Péter vagyok, a Budapesti Corvinus egyetem másodéves gazdaságinformatikus alapszakos hallgatója. Az általános iskolát és gimnáziumot Baján végeztem el, ahol kitűnő tanuló voltam. 1. osztálytól németet tanultam, második nyelvként később az angolt választottam. Legkedveltebb tárgyaim a matematika és történelem. Versenyeredményként megemlíthető hogy 4. helyezést értem el a Koháry történelemverseny utolsó fordulójában Kecskeméten.</p>
+<p><span>Vándor Péter</span> vagyok, a Budapesti Corvinus egyetem másodéves gazdaságinformatikus alapszakos hallgatója. Az általános iskolát és gimnáziumot Baján végeztem el, ahol kitűnő tanuló voltam. 1. osztálytól németet tanultam, második nyelvként később az angolt választottam. Legkedveltebb tárgyaim a matematika és történelem. Versenyeredményként megemlíthető hogy 4. helyezést értem el a Koháry történelemverseny utolsó fordulójában Kecskeméten.</p>
 <p>Az informatika világa mindig is érdekelt, de sokat vaciláltam a nekem megfelelő szak kiválasztásakor. A Corvinust választottam a gazdaságinformatikus képzések közül a híre alapján, annak ellenére hogy Budapest távol esik Bajától. A felvételi eljárásban 425 pontot értem el emelt matek érettségivel. Érdekel az adatelemzés, az automatizáció és robotizáció, valamint a mesterséges intelligencia területe.</p>
 <p>Szabadidőmben szeretek olvasni, elsősorban fantasy és sci-fi könyveket. Szeretek zenét hallgatni, filmeket nézni. Nem vagyok annyira sportos alkat, de a csapatsportok közül a röplabdát, az egyéni sportágak közül pedig az úszást kedvelem. A háziállatok közül a macskák a kedvenceim, de a pókokon, rovarokon és kígyókon kívül szinte minden állattal össze tudok barátkozni.</p>
 <hr>
 
-<p><a id="b">Fénykép</a></p>
-<img src="sajatkep.jpg" alt="Egy kép rólam">
+<div id="kep">
+    <p><a id="b">Fénykép</a></p>
+    <img src="sajatkep.jpg" alt="Egy kép rólam">
+</div>
 <hr>
 
 <p><a id="c">Tanulmányok</a></p>
-<ol>
+<ol class="iskola">
 <li>Bajai Szent László ÁMK (1.- 6. osztály)</li>
 <li>Bajai III. Béla Gimnázium (7. - 12. osztály)</li>
 <li>Budapesti Corvinus Egyetem</li>
@@ -51,29 +54,31 @@
 </ul>
 <hr>
 
-<p><a id="f">Egyéb érdeklődési területek</a></p>
-<ul>
-<li>Űrkutatás</li>
-<li>Környezetvédelem</li>
-<li>Történelem</li>
-</ul>
-<hr>
+<div id="egyeb">
+    <p><a id="f">Egyéb érdeklődési területek</a></p>
+    <ul class="hobbi">
+        <li>Űrkutatás</li>
+        <li>Környezetvédelem</li>
+        <li>Történelem</li>
+    </ul>
+    <hr>
 
-<p><em><a id="g">Kedvenc (vad)állatok</a></em></p>
-<ul>
-<li>Bálna</li>
-<li>Oroszlán</li>
-<li>Vörös panda</li>
-<li>Vidra</li>
-</ul>
-<hr>
+    <p><em><a id="g">Kedvenc (vad)állatok</a></em></p>
+    <ul class="hobbi">
+        <li>Bálna</li>
+        <li>Oroszlán</li>
+        <li>Vörös panda</li>
+        <li>Vidra</li>
+    </ul>
+    <hr>
 
-<p><em><a id="h">Kedvenc könyvek és könyvsorozatok</a></em></p>
-<ul>
-<li>Isaac Asimov: Alapítvány</li>
-<li>Arthur C. Clarke: A gyermekkor vége</li>
-<li>J.R.R. Tolkien: A Gyűrűk Ura </li>
-<li>Jeff Vandermeer: Expedíció </li>
-</ul>
+    <p><em><a id="h">Kedvenc könyvek és könyvsorozatok</a></em></p>
+    <ul class="hobbi">
+        <li>Isaac Asimov: Alapítvány</li>
+        <li>Arthur C. Clarke: A gyermekkor vége</li>
+        <li>J.R.R. Tolkien: A Gyűrűk Ura </li>
+        <li>Jeff Vandermeer: Expedíció </li>
+    </ul>
+</div>
 </body>
 </HTML>

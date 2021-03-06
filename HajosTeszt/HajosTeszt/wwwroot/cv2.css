@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: bold;
+  text-align: center;
+}
+
+#article,
+#aside,
+#footer,
+#header,
+#nav {
+  padding: 20px;
+}
+
+#header {
+    background-color: tomato;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Courier New";
+}
+
+#nav {
+  display: flex;
+  background-color: deepskyblue;
+}
+
+#nav a {
+  text-decoration: none;
+  color: black;
+  flex: 1 1 auto;
+}
+
+#article {
+  background-color: gold;
+  text-align: left;
+}
+
+#article span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#article ol#menu {
+    background-color: lightgrey;
+    border-radius: 25px;
+    width: 200px;
+    line-height: 25px;
+}
+
+a.menupont:hover {
+    color: greenyellow;
+}
+
+a.menupont:visited {
+    color: white;
+}
+
+#aside {
+    display: flex;
+    background-color: lightgreen;
+    justify-content: center;
+    align-items: center;
+}
+
+#aside div#kep {
+    border: 2px solid brown;
+    padding: 40px;
+    margin: 10px;
+    width: 500px;
+    border-radius: 25px;
+}
+
+#aside div#kep p {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-family: "Monotype Corsiva";
+}
+
+#aside div#kep img {
+        display: block;
+        margin: auto;
+}
+
+
+#footer {
+    display: flex;
+    background-color: burlywood;
+    border-radius: 0px 0px 35px 35px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer ol.iskola {
+    list-style-type: upper-roman;
+}
+
+.lista {
+    background-color: white;
+    width: 500px;
+    border-radius: 25px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: auto;
+  }
+  #main {
+    display: flex;
+  }
+  #nav,
+  #header {
+    order: -1;
+  }
+  #article {
+    flex: 1 1 60%;
+  }
+  #aside {
+    flex: 1 1 40%;
+  }
+
+}

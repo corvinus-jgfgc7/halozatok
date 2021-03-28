@@ -5,4 +5,8 @@
     <UserSecretsId>14e17c7b-4686-41b2-8de1-757daaace840</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\hetedik.js" />
+  </ItemGroup>
+
 </Project>

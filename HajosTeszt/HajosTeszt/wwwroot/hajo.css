@@ -1,4 +1,8 @@
-﻿html, body {
+﻿/** {
+    box-sizing: border-box;
+}*/
+
+html, body {
     height: 100%;
     margin: 0px;
     padding: 2px;
@@ -24,22 +28,34 @@ div {
 }
 
 #középső {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     flex-grow: 1;
-    background-color: lightgray;
+    background-color: lightgray;*/
+
+    display: flex;
+    flex-direction: column;
 }
 
 #válaszok {
-    flex-grow: 1;
+    /*flex-grow: 1;
     flex-shrink: 1;
-    background-color: white;
+    background-color: white;*/
+
+    order: 2;
 }
 
 #kép {
-    flex-grow: 0;
+    /*flex-grow: 0;
     flex-shrink: 0;
-    background-color: white;
+    background-color: white;*/
+
+    order: 1;
+    /*max-width: 50%;*/
+}
+
+#kép1 {
+    max-width: 100%;
 }
 
 #vezérlő {
@@ -50,8 +66,8 @@ div {
 }
 
 .kerdes {
-    height: 100px;
-    font-size: 25px;
+    height: 75px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -61,9 +77,9 @@ div {
 }
 
     .kattintható:hover {
-        background-color: cadetblue;
-        color: white;
-    }
+        /*background-color: cadetblue;
+        color: white;*/
+}
 
 .kattintható.rossz:hover {
     background-color: red;
@@ -77,28 +93,63 @@ div {
 
 
 .gomb {
-    width: 80px;
+    width: 40px;
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     background-color: white;
 }
 
-@media screen and (max-width: 850px) {
-    #középső {
-        display: flex;
-        flex-direction: column;
-    }
+@media screen and (min-width: 850px) {
 
-    #kép {
-        order: 1;
+        .kerdes {
+        height: 100px;
+        font-size: 25px;
+        font-weight: bold;
+        }
+
+    #középső {
+        /*display: flex;
+        flex-direction: column;*/
+
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        background-color: lightgray;
     }
 
     #válaszok {
-        order: 2;
+        /*order: 2;*/
+
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-color: white;
+        order: 1;
     }
+
+    #kép {
+        /*order: 1;
+        max-width: 25%;*/
+
+        flex-grow: 0;
+        flex-shrink: 0;
+        background-color: white;
+        order: 2;
+        max-width: 100%;
+    }
+
+    #kép1 {
+        max-width: 100%;
+    }
+
+    .gomb {
+        width: 80px;
+        padding: 20px;
+        font-size: 20px;
+    }
+
 }
 
 

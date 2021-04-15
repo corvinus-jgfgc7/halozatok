@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+            fetch('/questions/all')
+                .then(response => response.json())
+                .then(data => kiiratás(data)
+                );
+
+
+        function kiiratás(lista) {
+            console.log(lista)
+            kérdések = lista;
+            for (var i = 0; i < kérdések.length; i++) {
+                let újElem = document.createElement("div");
+                újElem.innerText = kérdések[i];
+                document.getElementById("eredmeny").appendChild(újElem);
+            }
+        }
+    </script>
+
+    <div id="eredmeny"></div>
+</body>
+</html>

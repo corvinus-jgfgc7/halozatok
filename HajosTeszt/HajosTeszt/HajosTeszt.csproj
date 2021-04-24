@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\hetedik.js" />
+    <None Include="wwwroot\nyolcadik.js" />
   </ItemGroup>
 
   <ItemGroup>

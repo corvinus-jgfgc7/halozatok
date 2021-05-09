@@ -41,16 +41,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Mentett állapot olvasása
     if (localStorage.getItem("hotList")) {
-        hotList = JSON.Parse(localStorage.getItem("hotList"));
+        hotList = JSON.parse(localStorage.getItem("hotList"));
     }
     if (localStorage.getItem("displayedQuestion")) {
-        hotList = parseInt(localStorage.getItem("displayedQuestion"));
+        displayedQuestion = parseInt(localStorage.getItem("displayedQuestion"));
     }
     if (localStorage.getItem("nextQuestion")) {
-        hotList = parseInt(localStorage.getItem("nextQuestion"));
+        nextQuestion = parseInt(localStorage.getItem("nextQuestion"));
     }
 
-    if (hotList.length === 3) {
+    alert(hotList.length);
+    if (hotList.length === 0) {
         
         for (let i = 0; i < questionsInHotList; i++) {
             kérdésBetöltés(nextQuestion, i);
@@ -97,7 +98,7 @@ function kérdésMegjelenítés() {
     }
     else {
         document.getElementById("kép1").style.display = "none";
-        document.getElementById("kép1").src = "https://szoft1.comeback.hu/hajo/" + kérdés.image;
+        
     }
     helyesVálasz = kérdés.correctAnswer;
 

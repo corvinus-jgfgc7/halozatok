@@ -81,12 +81,12 @@ div {
         color: white;*/
 }
 
-.kattintható.rossz:hover {
+.rossz {
     background-color: red;
     color: white;
 }
 
-.kattintható.jó:hover {
+.jó {
     background-color: green;
     color: white;
 }

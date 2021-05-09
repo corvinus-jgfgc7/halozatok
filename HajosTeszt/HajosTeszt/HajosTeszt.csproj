@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\tizedik.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\tizedik.js" />
     <None Include="wwwroot\nyolcadik.js" />
   </ItemGroup>
 

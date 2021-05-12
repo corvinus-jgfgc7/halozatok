@@ -12,7 +12,7 @@
 var kérdésSzáma = 1;
 var helyesVálasz;
 
-var hotList = [];           //Az éppen gyakoroltatott kérdések listája 
+var hotList = [];           //Az éppen gyakoroltatott kérdések listája  
 var questionsInHotList = 3; //Ez majd 7 lesz, teszteléshez jobb a 3. 
 var displayedQuestion;      //A hotList-ből éppen ez a kérdés van kint
 var numberOfQuestions;      //Kérdések száma a teljes adatbázisban
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     alert(hotList.length);
-    if (hotList.length === 0) {
+    if (!localStorage.getItem("hotList")) {
         
         for (let i = 0; i < questionsInHotList; i++) {
             kérdésBetöltés(nextQuestion, i);

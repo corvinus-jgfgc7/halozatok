@@ -10,7 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\tizedik.js" />
+    <None Include="wwwroot\tizedik.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\nyolcadik.js" />
   </ItemGroup>
 
